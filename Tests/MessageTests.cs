@@ -10,6 +10,18 @@ namespace Tests
     [TestFixture]
     public class MessageMutationTests
     {
+        [TestFixtureSetUp]
+        public void Install()
+        {
+            AssertionImproverFixtureSetup.Install();
+        }
+
+        [TestFixtureTearDown]
+        public void Uninstall()
+        {
+            AssertionImproverFixtureSetup.Uninstall();
+        }
+
         [Test]
         public void SingleLine()
         {
@@ -41,9 +53,8 @@ namespace Tests
 
         private static void TestMessageMutated(Exception e, string failedAssertionDescription)
         {
-            var originalMessage = e.Message;
-            AssertionImprover.AddAssertionSourceIfAvailable(e);
-            Assert.That(e.Message, Is.EqualTo($"In:{failedAssertionDescription}\r\n" + originalMessage));
+            Assert.That(e.Message, Is.StringStarting($"In:{failedAssertionDescription}\r\n"), "Should have added a prefix");
+            Assert.That(e.Message, Is.StringContaining($"Expected:"), "Normal message should still be present");
         }
     }
 }
