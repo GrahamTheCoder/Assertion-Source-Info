@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Gtc.AssertionSourceInfo</id>
+    <version>$version$</version>
+    <authors>GrahamTheCoder</authors>
+    <owners>GrahamTheCoder</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Adds the source code statement which caused the assertion failure.</description>
+	  <projectUrl>https://github.com/GrahamTheCoder/Assertion-Source-Info</projectUrl>
+    <releaseNotes>$releaseNotes$</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>test assertion source info helper test</tags>
+  </metadata>
+  <files>
+    <file src="Gtc.AssertionSourceInfo.dll" target="lib\net35" />
+  </files>
+</package>
