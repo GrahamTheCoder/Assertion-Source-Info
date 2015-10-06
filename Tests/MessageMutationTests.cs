@@ -1,8 +1,8 @@
-﻿using Gtc.AssertionSourceInfo;
+﻿using System;
+using Gtc.AssertionSourceInfo;
 using NUnit.Framework;
-using System;
 
-namespace Tests
+namespace Gtc.AssertionHelpers.Tests
 {
     /// <summary>
     /// Do not reformat this class, the line spacing is part of the test
