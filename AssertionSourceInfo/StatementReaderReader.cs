@@ -6,9 +6,7 @@ using System.Linq;
 namespace Gtc.AssertionSourceInfo
 {
     /// <remarks>
-    /// TODO: Consider using Roslyn to actually parse the statement if:
-    ///  It can be references from .NET 3.5
-    ///  It can be nugetted in way not requring VS 2015
+    /// TODO: Consider using Roslyn to actually parse the statements
     /// </remarks>
     internal class StatementReader
     {
