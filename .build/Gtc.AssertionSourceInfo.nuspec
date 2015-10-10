@@ -13,6 +13,6 @@
     <tags>test assertion source info helper test</tags>
   </metadata>
   <files>
-    <file src="Gtc.AssertionSourceInfo.dll" target="lib\net35" />
+    <file src="Gtc.AssertionSourceInfo.dll" target="lib\net40" />
   </files>
 </package>

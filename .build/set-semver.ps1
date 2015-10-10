@@ -1,11 +1,9 @@
-param($currentBuildNumber)
-
-$majorVersion = 1
-$minorVersion = 0
+param($currentVersion)
 
 $currentVersion = [System.Version]"$currentBuildNumber"
+$majorVersion = $currentVersion.Major
+$minorVersion = $currentVersion.Minor
 $currentVersionBuild = $currentVersion.Build
-$currentVersionRevision = $currentVersion.Revision
 
 $newBuildNumber = "$majorVersion.$minorVersion.$currentVersionBuild"
 Write-Host "Setting the TeamCity build number to $newBuildNumber"
