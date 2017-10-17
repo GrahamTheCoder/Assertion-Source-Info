@@ -1,7 +1,7 @@
 # Assertion-Source-Info
 Adds the statement which caused the assertion failure to the assertion error message.
 
-##Example
+## Example
 ```
 Assert.That("baboon".IndexOf("boo"), Is.EqualTo(3));
 ```
