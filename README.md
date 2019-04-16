@@ -15,7 +15,7 @@ In: Assert.That("baboon".IndexOf("boo"), Is.EqualTo(3)); Expected 3 but was 2
 
 
 ## How to use with NUnit
-```
+```csharp
 [SetUpFixture]
 public class AssemblySetUp
 {
