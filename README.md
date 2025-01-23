@@ -1,3 +1,5 @@
+ℹ️ NUnit has now integrated this functionality, so I'm archiving the repo
+
 # Assertion-Source-Info
 Adds the statement which caused the assertion failure to the assertion error message.
 
